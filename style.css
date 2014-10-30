@@ -6,3 +6,6 @@ body {
 table{
 	width: 100%;
 }
+select{
+	width: 19%;
+}
