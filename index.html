@@ -29,7 +29,7 @@
 				<table>
 					<tr>
 						<td>Name:</td> <!-- Who are you!?!?! -->
-						<td><input type="text"/></td>
+						<td><input type="text" required oninput="checkName(this)" /></td>
 					</tr>
 					<tr>
 						<td>Age:</td> <!-- Over -1 to play, over 0 to party -->
@@ -39,7 +39,7 @@
 						<td>Gender:</td>
 						<td>
 							<input type="radio">Male</input>
-							<input type="radio">Female</input>
+							<input type="radio" checked>Female</input>
 							<!-- <input type="radio">Alien</input> -->
 						</td>
 					</tr>
@@ -55,6 +55,14 @@
 						</td> 
 					</tr>
 					<tr>
+						<td>Email:</td>
+						<td>
+							<input type="email" id="email_addr_repeat" name="email_addr_repeat" required oninput="checkEmail(this)">
+						</td> 
+					</tr>
+
+					<tr>
+
 						<td></td>
 						<td>
 							<button>Submit</button>
