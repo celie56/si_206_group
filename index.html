@@ -13,6 +13,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<!-- Our Style -->
 		<link href="style.css" rel="stylesheet">
+		<script type="text/javascript" src="validation.js"></script>
 	</head>
 	<body>
 		<div class="container"> <!-- Controlled by bootstrap -->
@@ -32,7 +33,7 @@
 					</tr>
 					<tr>
 						<td>Age:</td> <!-- Over -1 to play, over 0 to party -->
-						<td><input type="number"/></td>
+						<td><input type="number" id="number" required oninput="checkAge(this)"/></td>
 					</tr>
 					<tr>
 						<td>Gender:</td>

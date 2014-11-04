@@ -10,3 +10,13 @@ function check(input) {
 }
 
 
+
+
+function checkAge(input) {
+  if (input.value == null) {
+    input.setCustomValidity('Input your age.');
+  } else {
+    // input is valid -- reset the error message
+    input.setCustomValidity('');
+  }
+}
