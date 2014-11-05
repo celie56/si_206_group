@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Hello World 2</title>
-		<!-- yup, we got charmander -->
-		<meta charset="utf-8">
+		<title>Character Select</title>
+		<meta charset="utf-8"> <!-- yup, we got charmander -->
 		<!-- Got that viewport all right -->
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<!-- JQuery Hosted Externally -->
@@ -13,6 +12,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<!-- Our Style -->
 		<link href="style.css" rel="stylesheet">
+		<!-- Our Javascript -->
 		<script type="text/javascript" src="validation.js"></script>
 	</head>
 	<body>
@@ -46,7 +46,7 @@
 					<tr>
 						<td>Color:</td>
 						<td>
-							<select>
+							<select> <!-- Should work with Safari -->
 								<option value="red">Red</option>
 								<option value="blue">Blue</option>
 								<option value="green">Green</option>
@@ -60,9 +60,7 @@
 							<input type="email" id="email_addr_repeat" name="email_addr_repeat" required oninput="checkEmail(this)">
 						</td> 
 					</tr>
-
 					<tr>
-
 						<td></td>
 						<td>
 							<button>Submit</button>
