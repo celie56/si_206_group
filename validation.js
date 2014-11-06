@@ -42,5 +42,8 @@ var updateImage = function(input){
 	getEl("avatar_image").src=img;
 }
 
-
+var selectTheme = function(input){
+	var theme = input.value + ".css";
+	getEl('theme').href = theme;
+}
 

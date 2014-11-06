@@ -12,6 +12,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<!-- Our Style -->
 		<link href="style.css" rel="stylesheet">
+		<link id="theme" rel="stylesheet" href="chris.css">
 	</head>
 	<body>
 		<div class="container"> <!-- Controlled by bootstrap -->
@@ -51,6 +52,15 @@
 									<!-- <option value="best">Rainbow</option> -->
 								</select>
 							</td> 
+						</tr>
+						<tr>
+							<td>Theme:</td>
+							<td>
+								<label><input type="radio" name="theme" onclick="selectTheme(this)" value="chris"> 1</label>
+								<label><input type="radio" name="theme" onclick="selectTheme(this)" value="martina"> 2</label>
+								<label><input type="radio" name="theme" onclick="selectTheme(this)" value="yoav"> 3</label>
+								<!-- <input type="radio">Alien</input> -->
+							</td>
 						</tr>
 						<tr>
 							<td>Email:</td>
