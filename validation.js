@@ -1,14 +1,21 @@
+// Because laziness
+var getEl = function(id){
+	return document.getElementById(id);
+}
 
+// default custom validation messages
+getEl('i_name').setCustomValidity('Please fill out your name');
+getEl('i_email').setCustomValidity('Please input your email');
 
 var checkEmail = function(input) {
-	if (input.value != document.getElementById('email_addr').value) {
-		input.setCustomValidity('The two email addresses must match.');
-	}
-	else if(input.value == null) {
-		input.setCustomValidity('Input your email');
-	}
-	else {
-		// input is valid -- reset the error message
+	// from http://www.w3schools.com/js/js_form_validation.asp
+	var x = input.value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+		input.setCustomValidity("not an email address");
+    }
+	else{
 		input.setCustomValidity('');
 	}
 }
@@ -24,9 +31,9 @@ var checkAge = function(input) {
 		input.setCustomValidity('');
 	}
 }
-
-var checkName = function(input) {
-	if (input.value == '') {
-		input.setCustomValidity('Please put in your name.');
-	} 
+var checkName = function(input){
+	if (input.value){
+		input.setCustomValidity('');
+	}
 }
+
