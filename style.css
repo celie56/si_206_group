@@ -7,5 +7,11 @@ table{
 	width: 100%;
 }
 select{
-	width: 19%;
+	width: 100%;
+}
+form{
+	display: inline-block;
+}
+#avatar{
+	display: inline-block;
 }

@@ -15,60 +15,63 @@
 	</head>
 	<body>
 		<div class="container"> <!-- Controlled by bootstrap -->
-			<div class=""> <!-- Soon to be centered by bootstrap -->
-			<nav>
-				<!-- Let's do it -->
-				<h1>Character Creation</h1>
-			</nav>
-			<p>
-				Right about here is where we will define the stuff.  Preferably, making a character, mkay?
-			</p>
-			<form> <!-- such form -->
-				<table>
-					<tr>
-						<td>Name:</td> <!-- Who are you!?!?! -->
-						<td><input id="i_name" type="text" required oninput="checkName(this)" /></td>
-					</tr>
-					<tr>
-						<td>Age:</td> <!-- Over -1 to play, over 0 to party -->
-						<td><input type="number" id="number" required oninput="checkAge(this)"/></td>
-					</tr>
-					<tr>
-						<td>Gender:</td>
-						<td>
-							<label><input type="radio" name="gender" value="male"> Male</label>
-							<label><input type="radio" name="gender" value="female"> Female</label>
-							<!-- <input type="radio">Alien</input> -->
-						</td>
-					</tr>
-					<tr>
-						<td>Color:</td>
-						<td>
-							<select> <!-- Should work with Safari -->
-								<option value="red">Red</option>
-								<option value="blue">Blue</option>
-								<option value="green">Green</option>
-								<!-- <option value="best">Rainbow</option> -->
-							</select>
-						</td> 
-					</tr>
-					<tr>
-						<td>Email:</td>
-						<td>
-							<input type="email" id="i_email" name="email_addr_repeat" required oninput="checkEmail(this)">
-						</td> 
-					</tr>
-					<tr>
-						<td></td>
-						<td>
-							<button>Submit</button>
-						</td>
-					</tr>
+			<div class=""> <!-- Soon to be centered by bootstrap, or not -->
+				<nav>
+					<!-- Let's do it -->
+					<h1>Character Creation</h1>
+				</nav>
+				<p>
+					Right about here is where we will define the stuff.  Preferably, making a character, mkay?
+				</p>
+				<form> <!-- such form -->
+					<table>
+						<tr>
+							<td>Name:</td> <!-- Who are you!?!?! -->
+							<td><input id="i_name" type="text" required oninput="checkName(this)" /></td>
+						</tr>
+						<tr>
+							<td>Age:</td> <!-- Over -1 to play, over 0 to party -->
+							<td><input type="number" id="number" required oninput="checkAge(this)"/></td>
+						</tr>
+						<tr>
+							<td>Gender:</td>
+							<td>
+								<label><input type="radio" name="gender" value="male"> Male</label>
+								<label><input type="radio" name="gender" value="female"> Female</label>
+								<!-- <input type="radio">Alien</input> -->
+							</td>
+						</tr>
+						<tr>
+							<td>Color:</td>
+							<td>
+								<select oninput="updateImage(this)"> <!-- Should work with Safari -->
+									<option value="charmander">Red</option>
+									<option value="squirtle">Blue</option>
+									<option value="bulbasaur">Green</option>
+									<!-- <option value="best">Rainbow</option> -->
+								</select>
+							</td> 
+						</tr>
+						<tr>
+							<td>Email:</td>
+							<td>
+								<input type="email" id="i_email" name="email_addr_repeat" required oninput="checkEmail(this)">
+							</td> 
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<button>Submit</button>
+							</td>
+						</tr>
 
-					<!-- ending table here -->
+						<!-- ending table here -->
 
-				</table> <!-- Pew -->
-			</form> <!-- Pew -->
+					</table> <!-- Pew -->
+				</form> <!-- Pew -->
+				<div id="avatar">
+					<img id="avatar_image" alt="your avatar" src="pics/charmander.png"/>
+				</div>
 		
 			</div>
 		</div> <!-- Pew Pew -->
