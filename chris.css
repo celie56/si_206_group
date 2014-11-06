@@ -1,5 +1,13 @@
-
 /* Yeps, moar style */
 
-body{
+select{
+	width: 100%;
+}
+td{
+	padding-right: 40%;
+}
+form{
+}
+#avatar{
+	padding-right: 10%;
 }
