@@ -1,13 +1,25 @@
-/* Yeps, moar style */
 
+/* Yep this is style */
+body {
+	background-color: pink;
+}
+table{
+	width: 100%;
+}
 select{
 	width: 100%;
 }
-td{
-	padding-right: 40%;
-}
 form{
+	display: inline-block;
+}
+h1{
+	text-align: center;
 }
 #avatar{
-	padding-right: 10%;
+	display: inline-block;
+}
+#avatar_image{
+	vertical-align: bottom;
+	padding-left: 200px;
+	height: 200px;
 }
