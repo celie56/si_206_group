@@ -37,8 +37,8 @@ var checkName = function(input){
 	}
 }
 
-var updateImage = function(input){
-	var img = "pics/" + input.value + ".png";
+var updateImage = function(){
+	var img = "pics/" + getEl('character').value + "_" + getEl('color').value + ".png";
 	getEl("avatar_image").src=img;
 }
 

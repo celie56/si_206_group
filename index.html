@@ -39,12 +39,23 @@
 							</td>
 						</tr>
 						<tr>
+							<td>Character:</td>
+							<td>
+								<select id="character" oninput="updateImage()"> <!-- Should work with Safari -->
+									<option value="mario">Mario</option>
+									<option value="link">Link</option>
+									<option value="megaman">Megaman</option>
+									<!-- <option value="best">Rainbow</option> -->
+								</select>
+							</td> 
+						</tr>
+						<tr>
 							<td>Color:</td>
 							<td>
-								<select oninput="updateImage(this)"> <!-- Should work with Safari -->
-									<option value="charmander">Red</option>
-									<option value="squirtle">Blue</option>
-									<option value="bulbasaur">Green</option>
+								<select id="color" oninput="updateImage()"> <!-- Should work with Safari -->
+									<option value="red">Red</option>
+									<option value="blue">Blue</option>
+									<option value="green">Green</option>
 									<!-- <option value="best">Rainbow</option> -->
 								</select>
 							</td> 
@@ -76,7 +87,7 @@
 					</table> <!-- Pew -->
 				</form> <!-- Pew -->
 				<div id="avatar">
-					<img id="avatar_image" alt="your avatar" src="pics/charmander.png"/>
+					<img id="avatar_image" alt="your avatar" src="pics/mario_red.png"/>
 				</div>
 			</div>
 		</div> <!-- Pew Pew -->
