@@ -51,10 +51,12 @@ h1{
 	text-align: center;
 	text-decoration: bold; 
 	font-family: "Calibri";
+	background: #3e9cbf;
+	padding:5px 25px; 
 }
 button{
 	padding:5px 25px; 
-	background:#3e9cbf; 
+	background:#dfe7ea; 
 	border:1px solid #33842a; 
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -66,7 +68,7 @@ button{
 }
 
 button:hover{
-	background-color: #dfe7ea;
+	background: #3e9cbf;
 	color: black;
 }
 #avatar{
