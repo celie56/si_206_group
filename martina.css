@@ -1,10 +1,10 @@
 
-
 td{
 	padding-bottom: 2%;
 }
 body {
-	background-color: blue;
+	background: url(/img/mountains.jpg) no-repeat bottom center scroll;
+	/*background-color: white;*/
 }
 table{
 	width: 100%;

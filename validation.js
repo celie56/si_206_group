@@ -47,3 +47,29 @@ var selectTheme = function(input){
 	getEl('theme').href = theme;
 }
 
+var checkGender = function(input){
+	if(document.getElementsByName("male").checked)
+	{
+		//display same dropdown menu
+		return;
+	}	
+	else if(document.getElementsByName("female").checked)
+	{
+		//display female dropdown menu
+		$("#character").change(function()){
+			$("character").append( $("<option>")
+    		.val("Fairy")
+    		.html("Fairy");
+    		);
+			$("character").append( $("<option>")
+		    .val("Doll")
+		    .html("Doll");
+			);
+			$("character").append( $("<option>")
+		    .val("Peach")
+		    .html("Peach");
+			);
+
+		}
+	}	
+}
