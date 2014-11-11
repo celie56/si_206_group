@@ -3,7 +3,7 @@ td{
 	padding-bottom: 2%;
 }
 body {
-	background: url(/img/mountains.jpg) no-repeat bottom center scroll;
+	background: url(./pics/mountains.jpg) no-repeat bottom center scroll;
 	/*background-color: white;*/
 }
 table{
