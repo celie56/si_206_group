@@ -25,16 +25,16 @@
 					<table>
 						<tr>
 							<td>Name:</td> <!-- Who are you!?!?! -->
-							<td><input id="i_name" type="text" required oninput="checkName(this)" /></td>
+							<td><input id="i_name" type="text" name="name" required oninput="checkName(this)" /></td>
 						</tr>
 						<tr>
 							<td>Age:</td> <!-- Over -1 to play, over 0 to party -->
-							<td><input type="number" id="number" required oninput="checkAge(this)"/></td>
+							<td><input type="number" id="number" name="age" required oninput="checkAge(this)"/></td>
 						</tr>
 						<tr>
 							<td>Gender:</td>
 							<td>
-								<label><input type="radio" name="gender" value="male"> Male</label>
+								<label><input type="radio" name="gender" value="male" checked> Male</label>
 								<label><input type="radio" name="gender" value="female"> Female</label>
 								<!-- <input type="radio">Alien</input> -->
 							</td>
@@ -42,7 +42,7 @@
 						<tr>
 							<td>Character:</td>
 							<td>
-								<select id="character" onchange="updateImage()"> <!-- Should work with Safari -->
+								<select id="character" name="character" onchange="updateImage()"> <!-- Should work with Safari -->
 									<option value="mario">Mario</option>
 									<option value="link">Link</option>
 									<option value="megaman">Megaman</option>
@@ -53,7 +53,7 @@
 						<tr>
 							<td>Color:</td>
 							<td>
-								<select id="color" onchange="updateImage()"> <!-- Should work with Safari -->
+								<select id="color"  name="color" onchange="updateImage()"> <!-- Should work with Safari -->
 									<option value="red">Red</option>
 									<option value="blue">Blue</option>
 									<option value="green">Green</option>
@@ -64,7 +64,7 @@
 						<tr>
 							<td>Theme:</td>
 							<td>
-								<label><input type="radio" name="theme" onclick="selectTheme(this)" value="chris"> 1</label>
+								<label><input type="radio" name="theme" onclick="selectTheme(this)" value="chris" checked> 1</label>
 								<label><input type="radio" name="theme" onclick="selectTheme(this)" value="martina"> 2</label>
 								<label><input type="radio" name="theme" onclick="selectTheme(this)" value="yoav"> 3</label>
 								<!-- <input type="radio">Alien</input> -->
