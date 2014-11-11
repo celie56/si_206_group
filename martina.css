@@ -1,3 +1,29 @@
+
+
 td{
 	padding-bottom: 2%;
+}
+body {
+	background-color: blue;
+}
+table{
+	width: 100%;
+}
+select{
+	width: 100%;
+}
+form{
+	display: inline-block;
+}
+h1{
+	text-align: center;
+	text-decoration: bold; 
+}
+#avatar{
+	display: inline-block;
+}
+#avatar_image{
+	vertical-align: bottom;
+	padding-left: 200px;
+	height: 200px;
 }
