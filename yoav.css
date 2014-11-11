@@ -1,1 +1,22 @@
+#avatar img{
+	border: ridge;
+	border-color: #4169E1;
+}
 
+form table tr td label{
+	display: block;
+	text-decoration: underline;
+}
+
+body{
+	background-color: #CC1100;
+}
+
+form table {
+	background-color: green;
+}
+
+h1 {
+	background-color: green;
+	font-family: Verdana;
+}
