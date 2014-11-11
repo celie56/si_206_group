@@ -1,10 +1,11 @@
 
 td{
 	padding-bottom: 2%;
+	padding-left: 1%;
 }
 body {
-	background: url(./pics/mountains.jpg) no-repeat bottom center scroll;
-	/*background-color: white;*/
+	/*background-image: url("pics/squirtle.png") no-repeat bottom center scroll;*/
+	background-color: white;
 }
 table{
 	width: 100%;
@@ -14,10 +15,59 @@ select{
 }
 form{
 	display: inline-block;
+
 }
+
+form {
+	font-family: "Calibri";
+
+}	
+input{
+	/*background-color: #CEEEFA;*/
+
+    border: 5px solid white; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 5px;
+    background: rgba(255,255,255,0.5);
+    margin: 0 0 10px 0;
+
+}
+
+select{
+	border-radius: 15px;
+	padding: 5px;
+	box-shadow: inset 0 0 5px rgba(000,000,000, 0.5);
+}
+
 h1{
 	text-align: center;
 	text-decoration: bold; 
+	font-family: "Calibri";
+}
+button{
+	padding:5px 25px; 
+	background:#3e9cbf; 
+	border:1px solid #33842a; 
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	/*shadow of button*/
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0, .75);
+	-moz-box-shadow: 0 0 4px rgba(0,0,0, .75);
+	box-shadow: 0 0 4px rgba(0,0,0, .75);
+}
+
+button:hover{
+	background-color: #dfe7ea;
+	color: black;
 }
 #avatar{
 	display: inline-block;
