@@ -23,7 +23,7 @@
 				<p>
 					Right about here is where we will define the stuff.  Preferably, making a character, mkay?
 				</p>
-				<form action="script.php" method="get"> <!-- such form -->
+				<form action="script.php" method="post"> <!-- such form -->
 					<table>
 						<tr>
 							<td>Name:</td> <!-- Who are you!?!?! -->
@@ -76,6 +76,12 @@
 							<td>Email:</td>
 							<td>
 								<input type="email" id="i_email" name="email" required oninput="checkEmail(this)">
+							</td> 
+						</tr>
+						<tr>
+							<td>Email you your responses?</td>
+							<td>
+								<label><input type="checkbox" name="emailme[]" value="yes" required > Yes</label>
 							</td> 
 						</tr>
 						<tr>
