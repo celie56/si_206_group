@@ -47,10 +47,32 @@ var selectTheme = function(input){
 	getEl('theme').href = theme;
 }
 
-var checkGender = function(input){
-	if(document.getElementsByName("male").checked)
+
+function changeList() {
+
+	var box = document.getElementById("character");
+
+	if(document.getElementById("male").checked)
 	{
-		//display same dropdown menu
-		return;
+	
+   	    box.options[0].text = "Mario";
+        box.options[0].value = "mario";
+        box.options[1].text = "Link";
+        box.options[1].value = "link";
+        box.options[2].text = "Megaman";
+        box.options[2].value = "megaman";
+
+	}
+	else if(document.getElementById("female").checked)
+	{
+
+		box.options[0].text = "Peach";
+        box.options[0].value = "peach";
+        box.options[1].text = "Squirtle";
+        box.options[1].value = "squirtle";
+        box.options[2].text = "other";
+        box.options[2].value = "other";
+  
 	}	
+		
 }
