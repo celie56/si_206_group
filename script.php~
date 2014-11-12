@@ -10,11 +10,6 @@ fwrite($fp, "END\n");
 fclose($fp);
 
 //registration email
-$message="";
-foreach($_POST as $n => $val) {
-	
-	$message .="$n : $val\n";
-	
 }
 
 	if (false){
