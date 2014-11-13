@@ -3,23 +3,23 @@
 	$fp = fopen("userinput.txt", "a");
 	$message="";
 	fwrite($fp, $message);
-	foreach($_POST as $k => $v){
-		if($k == "interests")
+	foreach($_POST as $key => $value){
+		if($key == "interests")
 		{
-			print "$k:";
-			foreach($_POST['interests'] as $i)
+			print "$key:";
+			foreach($_POST['interests'] as $interest)
 			{
-				$i = implode(', ', $_POST['interests']);
+				$interest = implode(', ', $_POST['interests']);
 			}
-			print(" $i <br>");
-			fwrite($fp, "$k: $i ");
-			$message+= "$k: $i ";
+			print(" $interest <br>");
+			fwrite($fp, "$key: $interest ");
+			$message+= "$key: $interest ";
 		}
 		else
 		{
-			print "$k: $v<br>";
-			fwrite($fp, "$k: $v ");
-			$message += "$k: $v ";
+			print "$key: $value<br>";
+			fwrite($fp, "$key: $value ");
+			$message += "$key: $value ";
 		}	
 			
 	}
