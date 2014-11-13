@@ -15,11 +15,16 @@ form{
 h1{
 	text-align: center;
 }
-#avatar{
-	display: inline-block;
-}
 #avatar_image{
 	vertical-align: bottom;
-	padding-left: 200px;
 	height: 200px;
 }
+@media only screen and (min-width: 400px){
+	#avatar{
+		display: inline-block;
+	}
+	#avatar_image{
+		padding-left: 200px;
+	}
+}
+
