@@ -38,7 +38,7 @@ var checkName = function(input){
 }
 
 var updateImage = function(){
-	var img = "pics/" + getEl('character').value + "_" + getEl('color').value + ".png";
+	var img = "pics/minified/" + getEl('character').value + "_" + getEl('color').value + ".png";
 	getEl("avatar_image").src=img;
 }
 
@@ -54,25 +54,21 @@ function changeList() {
 
 	if(document.getElementById("male").checked)
 	{
-	
    	    box.options[0].text = "Mario";
         box.options[0].value = "mario";
         box.options[1].text = "Link";
         box.options[1].value = "link";
         box.options[2].text = "Megaman";
         box.options[2].value = "megaman";
-
 	}
 	else if(document.getElementById("female").checked)
 	{
-
 		box.options[0].text = "Peach";
         box.options[0].value = "peach";
-        box.options[1].text = "Squirtle";
-        box.options[1].value = "squirtle";
-        box.options[2].text = "other";
-        box.options[2].value = "other";
-  
+        box.options[1].text = "Pokemon";
+        box.options[1].value = "pokemon";
+        box.options[2].text = "Toad";
+        box.options[2].value = "toad";
 	}	
-		
+	updateImage();
 }
