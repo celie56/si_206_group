@@ -13,13 +13,13 @@
 			}
 			print(" $interest <br>");
 			fwrite($fp, "$key: $interest ");
-			$message+= "$key: $interest ";
+			$message+= "$key: $interest; ";
 		}
 		else
 		{
 			print "$key: $value<br>";
 			fwrite($fp, "$key: $value ");
-			$message += "$key: $value ";
+			$message += "$key: $value; ";
 		}	
 			
 	}
