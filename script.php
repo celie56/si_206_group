@@ -1,11 +1,29 @@
 <?php
+	
 	$fp = fopen("userinput.txt", "a");
+	$message="";
 	fwrite($fp, $message);
 	foreach($_POST as $k => $v){
-		print "$k: $v<br>";
-		fwrite($fp, "$k: $v, ");
-		$message += "$k: $v,";
+		if($k == "interests")
+		{
+			print "$k:";
+			foreach($_POST['interests'] as $i)
+			{
+				$i = implode(', ', $_POST['interests']);
+			}
+			print(" $i <br>");
+			fwrite($fp, "$k: $i ");
+			$message+= "$k: $i ";
+		}
+		else
+		{
+			print "$k: $v<br>";
+			fwrite($fp, "$k: $v ");
+			$message += "$k: $v ";
+		}	
+			
 	}
+
 	fwrite($fp, "END\n");
 	fclose($fp);
 
@@ -20,4 +38,5 @@
 		mail($to, $subject, $message, $headers);
 		print "Email sent";
 	}
+
 ?>
