@@ -1,5 +1,5 @@
-// Because laziness
 var getEl = function(id){
+	// Because laziness
 	return document.getElementById(id);
 }
 
@@ -31,6 +31,7 @@ var checkAge = function(input) {
 		input.setCustomValidity('');
 	}
 }
+
 var checkName = function(input){
 	if (input.value){
 		input.setCustomValidity('');
@@ -38,18 +39,19 @@ var checkName = function(input){
 }
 
 var updateImage = function(){
+	// updates avatar image based on character and color selection
 	var img = "pics/minified/" + getEl('character').value + "_" + getEl('color').value + ".png";
 	getEl("avatar_image").src=img;
 }
 
 var selectTheme = function(input){
+	// changes theme based on which theme box is checked
 	var theme = input.value + ".css";
 	getEl('theme').href = theme;
 }
 
-
 function changeList() {
-
+	// change character list options based on gender
 	var box = document.getElementById("character");
 
 	if(document.getElementById("male").checked)
