@@ -78,18 +78,18 @@ select{
 }
 
 h1{
-  background-image: url("pics/mountains.jpg");
-  padding:50px 20px; 
+ 
 }
 
-h1 p{
+h1{
   text-align: center;
   text-decoration: bold; 
-  font-size: 40px;
-  font-family: "Calibri";
+  font-size: 60px;
+  font-family: "Arial Black"; 
   color: white;
-  background: #3e9cbf;
-  padding:3px 5px;
+  background-image: url("pics/mountains.jpg");
+  padding:50px 20px; 
+  
 }
 button{
   padding:5px 25px; 
