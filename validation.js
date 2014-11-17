@@ -77,5 +77,5 @@ function changeList() {
 
 function updateColorBox(input){
 	// update character background color
-	getEl('avatar_image').style.borderColor = input.value;
+	getEl('avatar_image').style.background = input.value;
 }
