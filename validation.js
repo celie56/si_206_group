@@ -74,3 +74,7 @@ function changeList() {
 	}	
 	updateImage();
 }
+
+function updateColorBox(input){
+	// update character background color
+}
