@@ -66,8 +66,8 @@ function changeList() {
 	}
 	else if(document.getElementById("female").checked)
 	{
-		box.options[0].text = "Peach";
-        box.options[0].value = "peach";
+		box.options[0].text = "Birdo";
+        box.options[0].value = "birdo";
         box.options[1].text = "Pokemon";
         box.options[1].value = "pokemon";
         box.options[2].text = "Toad";
