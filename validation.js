@@ -6,6 +6,7 @@ var getEl = function(id){
 // default custom validation messages
 getEl('i_name').setCustomValidity('Please fill out your name');
 getEl('i_email').setCustomValidity('Please input your email');
+updateColorBox(getEl('background_color'));
 
 var checkEmail = function(input) {
 	// from http://www.w3schools.com/js/js_form_validation.asp
