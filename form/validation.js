@@ -87,3 +87,7 @@ function updateColorBox(input){
 	// update character background color
 	getEl('avatar_image').style.background = input.value;
 }
+
+var updateMoralityInput = function (val) {
+      document.getElementById('textInput').value=val; 
+}
