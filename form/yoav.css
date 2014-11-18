@@ -3,7 +3,7 @@
 	border-color: #4169E1;
 }
 
-form table tr td label{
+label{
 	display: block;
 	text-decoration: underline;
 }
@@ -12,7 +12,7 @@ body{
 	background-color: #CC6600;
 }
 
-form table {
+table {
 	background-color: #CC9900;
 }
 
