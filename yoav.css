@@ -32,3 +32,9 @@ form{
 	border: 5px solid #CC9900;
 	border-radius: 15px;
 }
+
+@media (max-width: 1200px){
+	#avatar{
+		position: static;
+	}
+}
