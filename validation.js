@@ -55,7 +55,16 @@ function changeList() {
 	// change character list options based on gender
 	var box = document.getElementById("character");
 
-	if(document.getElementById("male").checked)
+	if (document.getElementById("mudkipz").checked)
+	{
+   	    box.options[0].text = "Mudkip";
+        box.options[0].value = "mudkip";
+        box.options[1].text = "Mudkip";
+        box.options[1].value = "mudkip";
+        box.options[2].text = "Mudkip";
+        box.options[2].value = "mudkip";
+	}
+	else if(document.getElementById("male").checked)
 	{
    	    box.options[0].text = "Mario";
         box.options[0].value = "mario";

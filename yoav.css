@@ -9,13 +9,26 @@ form table tr td label{
 }
 
 body{
-	background-color: #CC1100;
+	background-color: #CC6600;
 }
 
 form table {
-	background-color: green;
+	background-color: #CC9900;
 }
 
 h1 {
 	font-family: Verdana;
+}
+#avatar{
+	display: inline-block;
+	position: relative;
+	top: -225px;
+	right: -35px;
+	box-shadow: 10px 10px 5px #888888;
+
+}
+form{
+	display: inline-block;
+	border: 5px solid #CC9900;
+	border-radius: 15px;
 }
