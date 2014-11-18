@@ -41,6 +41,7 @@ var checkName = function(input){
 
 var updateImage = function(){
 	// updates avatar image based on character and color selection
+	// compress file at https://tinypng.com/ before adding to folder
 	var img = "pics/minified/" + getEl('character').value + "_" + getEl('color').value + ".png";
 	getEl("avatar_image").src=img;
 }
@@ -55,8 +56,7 @@ function changeList() {
 	// change character list options based on gender
 	var box = document.getElementById("character");
 
-	if (document.getElementById("mudkipz").checked)
-	{
+	if (document.getElementById("mudkipz").checked){
    	    box.options[0].text = "Mudkip";
         box.options[0].value = "mudkip";
         box.options[1].text = "Mudkip";
@@ -64,8 +64,7 @@ function changeList() {
         box.options[2].text = "Mudkip";
         box.options[2].value = "mudkip";
 	}
-	else if(document.getElementById("male").checked)
-	{
+	else if(document.getElementById("male").checked){
    	    box.options[0].text = "Mario";
         box.options[0].value = "mario";
         box.options[1].text = "Link";
@@ -73,8 +72,7 @@ function changeList() {
         box.options[2].text = "Megaman";
         box.options[2].value = "megaman";
 	}
-	else if(document.getElementById("female").checked)
-	{
+	else if(document.getElementById("female").checked){
 		box.options[0].text = "Birdo";
         box.options[0].value = "birdo";
         box.options[1].text = "Pokemon";
