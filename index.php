@@ -13,10 +13,11 @@
 		<div class="container"> <!-- Controlled by bootstrap -->
 			<div class="">
 				 <!-- Pew Pew -->
+				<p id="WelcomeText"></p>
 			</div>
 		</div>
 		<?php include "footer.php"; ?>
-		<script type="text/javascript" src=""></script>		<!-- Our Javascript, yet to be set -->
+		<script type="text/javascript" src="login.js"></script>		<!-- Our Javascript, yet to be set -->
 	</body>
 </html>
 
