@@ -3,7 +3,7 @@
 	<?php
         // Just in case we want to change these easily
         $header     =   "header.php";
-        $landing    =   "pages/home.html";
+        $landing    =   "pages/Home.html";
         $footer     =   "footer.php";
         $styles     =   "styles.html";      // all css files
         $scripts    =   "scripts.html";     // all javascript files

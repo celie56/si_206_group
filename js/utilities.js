@@ -12,3 +12,8 @@ var clickme = function(element){
     console.log($path);
     ContentSwap($path);
 }
+
+$(".link").click(function(){
+    $path = $(this).html() + ".html";
+    ContentSwap($path);
+});
