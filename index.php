@@ -8,15 +8,19 @@
 		<link href="bootstrap.min.css" rel="stylesheet">		<!-- Bootstrappin Hosted Externally -->
 		<link id="theme" rel="stylesheet" href="">		<!-- Theme to be changed -->
 	</head>
+	<?php
+        // Just in case we want to change these easily
+        $header = "header.php";
+        $landing = "home.html";
+        $footer = "footer.php";
+	?>
 	<body>
-		<?php include "header.php"; ?>
-		<div class="container"> <!-- Controlled by bootstrap -->
-			<div class="">
-				 <!-- Pew Pew -->
-				<p id="WelcomeText"></p>
-			</div>
+		<?php include "$header"; ?>
+		<div id="content" class="">
+			<!-- Let's load this with php and update it with js -->
+			<?php include "$landing"; ?>
 		</div>
-		<?php include "footer.php"; ?>
+		<?php include "$footer"; ?>
 		<script type="text/javascript" src="login.js"></script>		<!-- Our Javascript, yet to be set -->
 	</body>
 </html>
