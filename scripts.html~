@@ -1,7 +1,7 @@
 
-<!-- JQuery Hosted Externally
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
- -->
+<!-- JQuery Hosted Externally -->
+<script type="text/javascript" src="js/jquery.js"></script>
+
 <!-- Our Javascript, yet to be set -->
 <script type="text/javascript" src="js/utilities.js"></script>
 <script type="text/javascript" src="js/login.js"></script>
