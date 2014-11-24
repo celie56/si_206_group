@@ -7,12 +7,6 @@ var ContentSwap = function(path){
 	});
 }
 
-var clickme = function(element){
-    $path = element.innerHTML + ".html";
-    console.log($path);
-    ContentSwap($path);
-}
-
 $(".link").click(function(){
     $path = $(this).html() + ".html";
     ContentSwap($path);
