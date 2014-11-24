@@ -35,7 +35,6 @@ var login = function(){
     }
     else {
         // do cookie exists stuff
-		document.getElementById("WelcomeText").innerHTML = "hello " + userCookie;
     }
 }
 login();

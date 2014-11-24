@@ -4,8 +4,8 @@
 ?>
 <nav>
 	<ul>
-		<li><a class="<?php if ($file == "index"){ echo "class";} ?>" href="index.php">Home</a></li>
-		<li><a class="<?php if ($file == "about"){ echo "class";} ?>" href="about.php">About</a></li>
-		<li><a class="<?php if ($file == "extra"){ echo "class";} ?>" href="extra.php">Extra</a></li>
+		<li><a onclick="clickme(this)"  href="">Home</a></li>
+		<li><a onclick="clickme(this)"  href="">About</a></li>
+		<li><a onclick="clickme(this)"  href="">Extra</a></li>
 	</ul>
 </nav>
