@@ -7,6 +7,8 @@ var ContentSwap = function(path){
 	});
 }
 
+// event listener to see when something with the
+// link class is clicked
 $(".link").click(function(){
     $path = $(this).html() + ".html";
     ContentSwap($path);
