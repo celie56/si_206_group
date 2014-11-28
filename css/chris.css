@@ -1,5 +1,8 @@
 
-// Let's have dat pointa
+.current{
+	color: blue;
+}
 .link:hover{
     cursor: pointer;
+	color: red;
 }
