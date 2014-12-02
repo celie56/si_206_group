@@ -1,20 +1,3 @@
-<<<<<<< HEAD
-<nav>
-	<ul class="nav navbar">
-        <!-- 
-            Quick explanation:
-            The javascript will grab the text between the li tags,
-            append .html to it, and then put in in the content div
-            for a long explanation check out utilities.js
-        -->
-		<li class="link nav-pill">Home</li>
-		<li class="link nav-pill">About</li>
-		<li class="link nav-pill">Extra</li>
-		<li class="link nav-pill">Form</li>
-		<li class="link nav-pill">5th</li>
-	</ul>
-</nav>
-=======
  <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -45,4 +28,3 @@
             <!-- /.navbar-collapse -->
 </div>
 <!-- /.container -->
->>>>>>> 6fe46e554c059094ff6951df7b03070edd674173
