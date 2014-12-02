@@ -1,0 +1,122 @@
+<div class="container"> <!-- Controlled by bootstrap -->
+			<div class=""> <!-- Soon to be centered by bootstrap, or not -->
+				<nav>
+					<!-- Let's do it -->
+					<h1>Character Creation</h1>
+				</nav>
+				<p>
+					Right about here is where we will define the stuff.  Preferably, making a character, mkay?
+				</p>
+				<form action="php/submit.php" method="post"> <!-- such form -->
+					<table>
+						<tr>
+							<td>Name:</td> <!-- Who are you!?!?! -->
+							<td><input id="i_name" type="text" name="name" placeholder="Evan Danger" required oninput="checkName(this)" /></td>
+						</tr>
+						<tr>
+							<td>Age:</td> <!-- Over -1 to play, over 0 to party -->
+							<td><input type="number" id="number" name="age" placeholder="42" required oninput="checkAge(this)"/></td>
+						</tr>
+						<tr>
+							<td>Gender:</td>
+							<td>
+								<label><input type="radio" name="gender" id="male" value="male" onchange="changeList()" checked> Male</label>
+								<label><input type="radio" name="gender" id="female" value="female" onchange="changeList()"> Female</label>
+								<!-- <input type="radio">Alien</input> -->
+							</td>
+						</tr>
+						<tr>
+							<td>Do you like mudkipz?:</td>
+							<td>
+								<label><input type="radio" name="mudkip" id="nomudkipz" value="nomudkipz" onchange="changeList()" checked> No</label>
+								<label><input type="radio" name="mudkip" id="mudkipz" value="mudkipz" onchange="changeList()" > Yes</label>
+							</td>
+						</tr>
+						<tr>
+							<td>Character:</td>
+							<td>
+								<select id="character" name="character" onchange="updateImage()"> <!-- Should work with Safari -->
+									<option value="mario">Mario</option>
+									<option value="link">Link</option>
+									<option value="megaman">Megaman</option>
+									<!-- <option value="best">Rainbow</option> -->
+								</select>
+							</td> 
+						</tr>
+						<tr>
+							<td>Color:</td>
+							<td>
+								<select id="color"  name="color" onchange="updateImage()"> <!-- Should work with Safari -->
+									<option value="red">Red</option>
+									<option value="blue">Blue</option>
+									<option value="green">Green</option>
+									<!-- <option value="best">Rainbow</option> -->
+								</select>
+							</td> 
+						</tr>
+						<tr>
+							<td>Background Color:</td>
+							<td><input id="background_color" type="color" name="color" oninput="updateColorBox(this)" value="#ff0000" /></td>
+						</tr>
+						<tr>
+							<td>Theme:</td>
+							<td>
+								<label><input type="radio" name="theme" onclick="selectTheme(this)" value="chris" checked> 1</label>
+								<label><input type="radio" name="theme" onclick="selectTheme(this)" value="martina"> 2</label>
+								<label><input type="radio" name="theme" onclick="selectTheme(this)" value="yoav"> 3</label>
+								<!-- <input type="radio">Alien</input> -->
+							</td>
+						</tr>
+						<tr>
+							<td>Interests:</td>
+							<td>
+								<label><input type="checkbox" name="interests[]" value="music"> Music</label>
+								<label><input type="checkbox" name="interests[]" value="movies"> Movies</label>
+							</td> 
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<label><input type="checkbox" name="interests[]" value="sports"> Sports</label>
+								<label><input type="checkbox" name="interests[]" value="reading"> Reading</label>
+							</td>
+						</tr>
+						<tr>
+							<td>Alignment (neutral = 0</td>
+							<td>
+								<label for = "morality"><input type="range" name="morality" value="morality" min="-1" max="1" 
+									onchange="updateMoralityInput(this.value);"></label>
+							</td>
+						</tr>
+						<tr>
+							<td>villain = -1, paragon = 1):<td>
+							<input type="text" id="textInput" value="">
+						</tr>
+						<tr>
+							<td>Email:</td>
+							<td>
+								<input type="email" id="i_email" name="email" placeholder="evan@danger.com" required oninput="checkEmail(this)">
+							</td> 
+						</tr>
+						<tr>
+							<td>Email you your responses?</td>
+							<td>
+								<label><input type="checkbox" name="emailme" value="yes"> Yes</label>
+							</td> 
+						</tr>
+						<tr>
+							<td></td>
+							<td>
+								<input type="submit">
+							</td>
+						</tr>
+
+						<!-- ending table here -->
+
+					</table> <!-- Pew -->
+				</form> <!-- Pew -->
+				<div id="avatar">
+					<img id="avatar_image" alt="your avatar" src="pics/mario_red.png"/>
+				</div>
+			</div>
+		</div>
