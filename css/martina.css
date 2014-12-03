@@ -15,8 +15,15 @@
   box-sizing: border-box;
 }
 
-body, button{
+
+
+h1, body, button{
   font-family: 'Helvetica Neue', arial, sans-serif;
+}
+
+h1{
+  font-size: 48px;
+  font-weight: 400;
 }
 
 #Container .mix{
@@ -80,17 +87,17 @@ button + label{
 
 .container .mix{
   text-align: left;
-  background: #03899c;
+  /*background: #03899c;*/
   margin-bottom: 2%;
   display: none;
 }
 
 .container .mix.category-1{
-  border-top: 2px solid limegreen;
+  border: 2px solid white;
 }
 
 .container .mix.category-2{
-  border-top: 2px solid yellow;
+  border: 2px solid yellow;
 }
 
 .container .mix:after{
@@ -107,6 +114,45 @@ button + label{
   content: '';
   display: inline-block;
   padding-top: 60%;
+}
+
+.one{
+  background: url("../img/lion_bw.jpg") repeat;
+  background-size: cover;
+}
+
+.three{
+  background: url("../img/elephant_bw.jpg") no-repeat;
+  background-size: cover;
+}
+.five{
+  background: url("../img/monkey_bw.jpg") no-repeat;
+  background-size: cover;
+}
+
+.eight{
+  background: url("../img/eye_bw.jpg") no-repeat;
+  background-size: cover;
+}
+
+.two{
+  background: url("../img/lights_color.jpg") no-repeat;
+  background-size: cover;
+}
+
+.four{
+  background: url("../img/umbrellas_color.jpg") no-repeat;
+  background-size: cover;
+}
+
+.six{
+  background: url("../img/balloons_color.jpg") no-repeat;
+  background-size: cover;
+}
+
+.seven{
+  background: url("../img/worms_color.jpg") no-repeat;
+  background-size: cover;
 }
 
 @media all and (min-width: 420px){
