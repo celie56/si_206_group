@@ -13,4 +13,6 @@
         <li class="link nav-pill">Form</li>
         <li class="link nav-pill">4th</li>
     </ul>
+	<!-- Let's put the avatar here -->
+	<img id="user_avatar" alt="User Avatar" src="">
 </nav>
