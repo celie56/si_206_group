@@ -1,40 +1,56 @@
 // cookie function from stack overflow http://stackoverflow.com/questions/5968196/check-cookie-if-cookie-exists
-var setCookie = function(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+d.toUTCString();
-    document.cookie = cname + "=" + cvalue + "; " + expires;
+function createCookie(name,value,days) {
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        var expires = "; expires="+date.toGMTString();
+    }
+    else var expires = "";
+    document.cookie = name+"="+value+expires+"; path=/";
 }
 
-var getCookie = function(name){
-    var dc = document.cookie;
-    var prefix = name + "=";
-    var begin = dc.indexOf("; " + prefix);
-    if (begin == -1) {
-        begin = dc.indexOf(prefix);
-        if (begin != 0) return null;
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
     }
-    else
-    {
-        begin += 2;
-        var end = document.cookie.indexOf(";", begin);
-        if (end == -1) {
-			end = dc.length;
-        }
-    }
-    return unescape(dc.substring(begin + prefix.length, end));
+    return null;
+}
+
+function eraseCookie(name) {
+    createCookie(name,"",-1);
 } 
 
 var login = function(){
-    var userCookie = getCookie("login");
+    var avatarCookie = getCookie("avatar");
 
-    if (userCookie == null) {
+    if (avatarCookie == null) {
         // do cookie doesn't exist stuff;
 		alert ("please log in");
-		setCookie("login", "chris", 365);
+		setCookie("avatar", "chris", 365);
     }
     else {
         // do cookie exists stuff
     }
 }
-login();
+
+var UpdateHeaderAvatar = function(){
+    var avatarCookie = readCookie("avatar");
+    if (avatarCookie == null) {
+		createCookie("avatar", "pics/mario_red.png", 365);
+		var avatarCookie = readCookie("avatar");
+	}
+	$('#user_avatar').attr('src', avatarCookie);
+}
+$('#user_avatar').ready(UpdateHeaderAvatar());
+
+var UpdateAvatar = function(){
+//$('#form_submit_button').click(function(){
+	eraseCookie('avatar');
+	$avatar = "pics/" + $('#character').val() + "_" + $('#color').val() + ".png";
+	createCookie('avatar', $avatar, 365);
+	UpdateHeaderAvatar();
+}

@@ -1,0 +1,1 @@
+name: chris; age: 42; gender: male; mudkip: nomudkipz; character: megaman; color: #ff0000; theme: chris; interests: music; morality: 0; email: no@no.no; END

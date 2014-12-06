@@ -7,7 +7,6 @@
 				<p>
 					Right about here is where we will define the stuff.  Preferably, making a character, mkay?
 				</p>
-				<form action="php/submit.php" method="post"> <!-- such form -->
 					<table>
 						<tr>
 							<td>Name:</td> <!-- Who are you!?!?! -->
@@ -107,14 +106,13 @@
 						<tr>
 							<td></td>
 							<td>
-								<input type="submit">
+								<button id="form_submit_button" onclick="UpdateAvatar()" type="submit">Submit</button>
 							</td>
 						</tr>
 
 						<!-- ending table here -->
 
 					</table> <!-- Pew -->
-				</form> <!-- Pew -->
 				<div id="avatar">
 					<img id="avatar_image" alt="your avatar" src="pics/mario_red.png"/>
 				</div>
