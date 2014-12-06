@@ -42,7 +42,7 @@ var checkName = function(input){
 var updateImage = function(){
 	// updates avatar image based on character and color selection
 	// compress file at https://tinypng.com/ before adding to folder
-	var img = "pics/minified/" + getEl('character').value + "_" + getEl('color').value + ".png";
+	var img = "pics/" + getEl('character').value + "_" + getEl('color').value + ".png";
 	getEl("avatar_image").src=img;
 }
 
