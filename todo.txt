@@ -1,6 +1,6 @@
 
-Make user login
-Create cookies to remember login
-Style the shit out this
+X Make user login
+X Create cookies to remember login
+X Style the shit out this
 Add functionality of some variety
-Add updating link color
+X Add updating link color
