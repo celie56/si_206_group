@@ -13,7 +13,7 @@
         <li class="link nav-pill">About</li>
         <li class="link nav-pill">Extra</li>
         <li class="link nav-pill">Form</li>
-        <li class="link nav-pill">4th</li>
+        <li class="link nav-pill">Gallery</li>
     </ul>
     <!-- Let's put the avatar here -->
     <img id="user_avatar" class="header_img" alt="User Avatar" src="">

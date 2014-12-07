@@ -1,0 +1,49 @@
+
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<!-- Our Javascript, yet to be set -->
+<script type="text/javascript" src="js/utilities.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+<script type="text/javascript" src="js/jquery.mixitup.js"></script>
+
+
+<link href="css/business-casual.css" rel="stylesheet">
+<link href="css/martina.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<body>
+  <div class="brand">Gallery</div>
+   
+
+    <div class="controls">
+      <label>Filter:</label>
+      
+      <button class="filter" data-filter="all">All</button>
+      <button class="filter" data-filter=".category-1">Black &amp; White </button>
+      <button class="filter" data-filter=".category-2">Color</button>
+      
+      <label>Sort:</label>
+      
+      <button class="sort" data-sort="myorder:asc">Ascending</button>
+      <button class="sort" data-sort="myorder:desc">Descending</button>
+    </div>
+    <div id="Container" class="container">
+      <div class="mix category-1 one" data-myorder="1"></div>
+      <div class="mix category-2 two" data-myorder="2"></div>
+      <div class="mix category-1 three" data-myorder="3"></div>
+      <div class="mix category-2 four" data-myorder="4"></div>
+      <div class="mix category-1 five" data-myorder="5"></div>
+      <div class="mix category-2 six" data-myorder="6"></div>
+      <div class="mix category-2 seven" data-myorder="7"></div>
+      <div class="mix category-1 eight" data-myorder="8"></div>
+      
+      <div class="gap"></div>
+      <div class="gap"></div>
+    </div>
+</body>
+<script type="text/javascript">
+$(function(){
+  $('#Container').mixItUp();
+});
+
+</script>
