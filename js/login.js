@@ -40,7 +40,7 @@ var login = function(){
 var UpdateHeaderAvatar = function(){
     var avatarCookie = readCookie("avatar");
     if (avatarCookie == null) {
-		createCookie("avatar", "pics/mario_red.png", 365);
+		createCookie("avatar", "pics/blank.PNG", 365);
 		var avatarCookie = readCookie("avatar");
 	}
 	$('#user_avatar').attr('src', avatarCookie);
