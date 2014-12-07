@@ -1,4 +1,6 @@
 
+ <link href="css/header.css" rel="stylesheet">
+
 <nav>
     <ul class="nav navbar">
         <!-- 
@@ -13,6 +15,6 @@
         <li class="link nav-pill">Form</li>
         <li class="link nav-pill">4th</li>
     </ul>
-	<!-- Let's put the avatar here -->
-	<img id="user_avatar" alt="User Avatar" src="">
+    <!-- Let's put the avatar here -->
+    <img id="user_avatar" class="header_img" alt="User Avatar" src="">
 </nav>
