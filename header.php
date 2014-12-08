@@ -1,7 +1,4 @@
 
-<link href="css/business-casual.css" type="text/css" rel="stylesheet">
-<link href="css/header.css" type="text/css" rel="stylesheet">
-<link href="css/chris.css" type="text/css" rel="stylesheet">
 <nav class="navbar navbar-default" role="navigation">
         <ul class="nav navbar-nav">
             <!-- 
