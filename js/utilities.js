@@ -13,3 +13,8 @@ $(".link").click(function(){
     $path = $(this).html() + ".html";
     ContentSwap($path);
 });
+
+var clicked = function(e){
+    $path = $(e).html() + ".html";
+    ContentSwap($path);
+}
