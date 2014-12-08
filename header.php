@@ -18,7 +18,7 @@
             <li class="link nav-pill navigation">Extra</li>
             <li class="link nav-pill navigation">Form</li>
             <li class="link nav-pill navigation">Gallery</li>
-            <li class="link nav-pill"><img id="user_avatar" class="header_img" alt="User Avatar" src=""></li>
+            <li class="link nav-pill"><img id="user_avatar" class="header_img" alt="User Avatar" src="blank.PNG"></li>
         </ul>
         <!-- Let's put the avatar here -->
     </div>    
