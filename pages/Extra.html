@@ -1,9 +1,11 @@
 <!-- Stylesheets -->
 <link href="css/business-casual.css" rel="stylesheet">
 <link href="css/martina.css" rel="stylesheet">
+
 <!-- Fonts -->
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+
 
 <h1>Extras</h1>
 <div class="col-lg-12">     
@@ -18,7 +20,7 @@
 	In case you have not noticed, we are fans of super smash bros. We hope you enjoy our website! 
 	</p>
 </div>
-<button id="btnInit" style="z-index: 99999 !important;">Find Me</button> 
+
 <div id="map-canvas"></div>
 <script>
 	function initialize() {
@@ -28,7 +30,16 @@
 			zoom: 8,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		}
-		var map = new google.maps.Map(mapCanvas, mapOptions)
+		 var map = new google.maps.Map(document.getElementById('map-canvas'),
+      mapOptions);
+
+		  var weatherLayer = new google.maps.weather.WeatherLayer({
+		    temperatureUnits: google.maps.weather.TemperatureUnit.FAHRENHEIT
+		  });
+		  weatherLayer.setMap(map);
+
+		  var cloudLayer = new google.maps.weather.CloudLayer();
+		  cloudLayer.setMap(map);
 	}
 	initialize();
 </script>
