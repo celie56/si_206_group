@@ -18,7 +18,7 @@
 
 
 h1, body, button{
-  font-family: 'Helvetica Neue', arial, sans-serif;
+  /*font-family: 'Helvetica Neue', arial, sans-serif;*/
 }
 
 h1{
@@ -91,7 +91,7 @@ button + label{
   margin-bottom: 2%;
   display: none;
   width: 600px;
-  height: 400px;
+  height: 300px;
 }
 
 .container .mix.category-1{
@@ -128,12 +128,12 @@ button + label{
   background-size: cover;
 }
 .five{
-  background: url("../img/picture3_bw.jpg") no-repeat;
+  background: url("../img/HarmfulFluidHairstreak.gif") no-repeat;
   background-size: cover;
 }
 
 .eight{
-  background: url("../img/picture4_bw.jpg") no-repeat;
+  background: url("../img/TartNastyGnatcatcher.gif") no-repeat;
   background-size: cover;
 }
 
