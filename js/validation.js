@@ -44,7 +44,9 @@ var updateImage = function(){
 	// compress file at https://tinypng.com/ before adding to folder
 	var img = "pics/" + getEl('character').value + "_" + getEl('color').value + ".png";
 	getEl("avatar_image").src=img;
+	UpdateAvatar();
 }
+updateImage();
 
 var selectTheme = function(input){
 	// changes theme based on which theme box is checked
