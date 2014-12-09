@@ -1,6 +1,6 @@
 
 <nav class="navbar navbar-default" role="navigation">
-    <div class="container">
+    <!-- <div class="container"> -->
         <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -28,7 +28,7 @@
             </ul>
         </div>    
         <!-- Let's put the avatar here -->
-    </div>
+    <!-- </div> -->
 </nav>
 
 
