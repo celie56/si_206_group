@@ -11,7 +11,7 @@
 						<!-- Let's do it -->
 					
 					</nav>
-					<form action="php/submit.php" method="post"> <!-- such form -->
+					<form action="php/submit.php" method="post" onsubmit="updateAvatar()"> <!-- such form -->
 						<table class="center-table">
 							<tr>
 								<td>Name:</td> <!-- Who are you!?!?! -->
@@ -60,7 +60,7 @@
 							</tr>
 							<tr>
 								<td>Background Color:</td>
-								<td><input id="background_color" type="color" name="color" oninput="updateColorBox(this)" value="#ff0000" /></td>
+								<td><input id="background_color" type="color" name="background_color" oninput="updateColorBox(this)" value="#ff0000" /></td>
 							</tr>
 							<tr>
 								<td>Theme:</td>
@@ -111,7 +111,7 @@
 							<tr>
 								<td></td>
 								<td>
-                                    <input type="submit" onclick="updateAvatar()">
+                                    <input type="submit" >
 								</td>
 							</tr>
 
