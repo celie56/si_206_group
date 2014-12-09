@@ -90,6 +90,8 @@ button + label{
   /*background: #03899c;*/
   margin-bottom: 2%;
   display: none;
+  width: 100px;
+  height: 500px;
 }
 
 .container .mix.category-1{
