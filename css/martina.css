@@ -90,8 +90,8 @@ button + label{
   /*background: #03899c;*/
   margin-bottom: 2%;
   display: none;
-  width: 100px;
-  height: 500px;
+  width: 600px;
+  height: 400px;
 }
 
 .container .mix.category-1{
@@ -119,12 +119,12 @@ button + label{
 }
 
 .one{
-  background: url("../img/picture1_bw.jpg") repeat;
+  background: url("../img/AccomplishedFriendlyIchidna.gif") repeat;
   background-size: cover;
 }
 
 .three{
-  background: url("../img/picture2_bw.gif") no-repeat;
+  background: url("../img/RashAgonizingClownanemonefish.gif") no-repeat;
   background-size: cover;
 }
 .five{
