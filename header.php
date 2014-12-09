@@ -2,10 +2,7 @@
 <link href="css/business-casual.css" rel="stylesheet">
 <link href="css/header.css" rel="stylesheet">
 <link href="css/chris.css" rel="stylesheet">
-<br>
-<br>
 <nav class="navbar navbar-default" role="navigation">
-    <div class="center">
         <ul class="nav navbar-nav">
             <!-- 
                 Quick explanation:
@@ -18,10 +15,9 @@
             <li class="link nav-pill navigation">Extra</li>
             <li class="link nav-pill navigation">Form</li>
             <li class="link nav-pill navigation">Gallery</li>
-            <li class="link nav-pill"><img id="user_avatar" class="header_img" alt="User Avatar" src=""></li>
+            <li class="link nav-pill"><img id="user_avatar" class="header_img" alt="User Avatar" src="blank.PNG"></li>
         </ul>
         <!-- Let's put the avatar here -->
-    </div>    
     
 </nav>
 

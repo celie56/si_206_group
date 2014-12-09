@@ -1,0 +1,30 @@
+
+/* Yep this is style */
+body {
+	background-color: pink;
+}
+table{
+	width: 100%;
+}
+select{
+	width: 100%;
+}
+form{
+	display: inline-block;
+}
+h1{
+	text-align: center;
+}
+#avatar_image{
+	vertical-align: bottom;
+	height: 200px;
+}
+@media only screen and (min-width: 400px){
+	#avatar{
+		display: inline-block;
+	}
+	#avatar_image{
+		padding-left: 200px;
+	}
+}
+

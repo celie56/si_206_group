@@ -117,41 +117,41 @@ button + label{
 }
 
 .one{
-  background: url("../img/lion_bw.jpg") repeat;
+  background: url("../img/picture1_bw.jpg") repeat;
   background-size: cover;
 }
 
 .three{
-  background: url("../img/elephant_bw.jpg") no-repeat;
+  background: url("../img/picture2_bw.gif") no-repeat;
   background-size: cover;
 }
 .five{
-  background: url("../img/monkey_bw.jpg") no-repeat;
+  background: url("../img/picture3_bw.jpg") no-repeat;
   background-size: cover;
 }
 
 .eight{
-  background: url("../img/eye_bw.jpg") no-repeat;
+  background: url("../img/picture4_bw.jpg") no-repeat;
   background-size: cover;
 }
 
 .two{
-  background: url("../img/lights_color.jpg") no-repeat;
+  background: url("../img/picture1.jpg") no-repeat;
   background-size: cover;
 }
 
 .four{
-  background: url("../img/umbrellas_color.jpg") no-repeat;
+  background: url("../img/picture2.jpg") no-repeat;
   background-size: cover;
 }
 
 .six{
-  background: url("../img/balloons_color.jpg") no-repeat;
+  background: url("../img/picture3.jpg") no-repeat;
   background-size: cover;
 }
 
 .seven{
-  background: url("../img/worms_color.jpg") no-repeat;
+  background: url("../img/picture4.jpg") no-repeat;
   background-size: cover;
 }
 
