@@ -17,7 +17,6 @@
 	<body>
 		<?php include "$header"; ?>
 		<div id="content" class="">
-			<!-- Let's load this with php and update it with js -->
 			<?php include "$landing"; ?>
 		</div>
 		<?php include "$footer"; ?>
