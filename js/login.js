@@ -24,28 +24,13 @@ function eraseCookie(name) {
     createCookie(name,"",-1);
 } 
 
-var login = function(){
-    var avatarCookie = getCookie("avatar");
+// End cookies
 
-    if (avatarCookie == null) {
-        // do cookie doesn't exist stuff;
-		alert ("please log in");
-		setCookie("avatar", "chris", 365);
-    }
-    else {
-        // do cookie exists stuff
-    }
-}
 
 var UpdateHeaderAvatar = function(){
     var avatarCookie = readCookie("avatar");
-    if (avatarCookie == null) {
-		createCookie("avatar", "pics/blank.PNG", 365);
-		var avatarCookie = readCookie("avatar");
-	}
 	$('#user_avatar').attr('src', avatarCookie);
 }
-$('#user_avatar').ready(UpdateHeaderAvatar());
 
 var UpdateAvatar = function(){
 //$('#form_submit_button').click(function(){
@@ -54,3 +39,21 @@ var UpdateAvatar = function(){
 	createCookie('avatar', $avatar, 365);
 	UpdateHeaderAvatar();
 }
+
+var login = function(){
+    var avatarCookie = readCookie("avatar");
+
+    if (avatarCookie == null) {
+        // do cookie doesn't exist stuff;
+        createCookie("avatar", "pics/blank.PNG", 365);
+        UpdateHeaderAvatar();
+        if (confirm("This appears to be your first time at our site, please create an account.") == true) {
+            ContentSwap("Form.html");
+        }
+    }
+    else {
+        // do cookie exists stuff
+        UpdateHeaderAvatar();
+    }
+}
+login();
